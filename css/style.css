@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    overflow-y: scroll;
+}
+
+.main {
+    /* border: 1px solid black; */
+    min-width: 80%;
+    height: 100vh;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main > h1 {
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+.message-box {
+    align-self: center;
+    width: 100%;
+}
+
+.message-box .messagelines {
+    margin: 25px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.last-message {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 25px;
+}
+
+.passwordInputs {
+    margin-top: 25px;
+}
+
+.passwordInputs input {
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.passwordInputs h2 {
+    text-align: center;
+}
+
+.passwordInputs form {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#saveBtn {
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    border-radius: 8px;
+    width: 30%;
+    margin: 2%;
+    height: 30px;
+}
+
+#viewPasswords {
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    border-radius: 8px;
+    width: 30%;
+    margin: 2%;
+    height: 30px;
+}
+
+.password-box {
+    display: none;
+}
+
+.saved-passwords {
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    width: 50%;
+    margin: 20px auto;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.Titems {
+    display: flex;
+    justify-content: space-between;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+#deleteAllBtn{
+    width: 110px;
+    height: 30px;
+    /* padding: 10px; */
+    background-color: red;
+    color: white;
+    border-radius: 1px solid white;
+    border-radius: 7px;
+    font-weight: 700;
+}
+
+.DeleteBtn{
+    padding: 8px;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    border: 1px solid black;
+}
+
+@media (max-width: 650px) {
+    .passwordInputs form .input-box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .passwordInputs form .input-box input {
+        margin: 10px;
+        border: 1px solid black;
+    }
+
+    .title{
+        font-size: 1.5rem;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    table {
+        font-size: 14px; /* Reduce font size for smaller screens */
+    }
+}
+

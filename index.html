@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PassGuardianPro - Password Manager</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">PassGuardianPro <i class='bx bxs-lock' style="font-size: 1.35rem;"></i></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./pages/pin.html">Set Pin</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./pages/forgot.html">Forgot Pin</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./pages/about.html">About Us</a>
+                </li>
+            </ul>
+            </div>
+          </nav>
+    </header>
+    <div class="main">
+        <h1 class="title">Welcome to PassGuardianPro.com!</h1>
+        <div class="message-box">
+            <p class="messagelines">Your fortress of digital security awaits. We understand the importance of keeping your online life safe and simple. With PassGuardianPro, you can trust that your passwords are locked away securely, just a click away when you need them.</p>
+            <p class="messagelines">Our mission is to empower you with the tools to manage your digital identity effortlessly. Say goodbye to password-related stress and hello to peace of mind.</p>
+            <p class="messagelines">Explore PassGuardianPro's features and start your journey towards a safer, more secure online world today.</p>
+            <p class="last-message">Secure. Simple. PassGuardianPro.</h2>
+        </div>
+        <!-- <hr color="black"> -->
+        <div class="passwordInputs">
+            <h2>Add Password</h2>
+            <form action="">
+                <div class="input-box">
+                    <input type="text" placeholder="Website" id="website" required>
+                    <input type="text" placeholder="Username" id="username" required>
+                    <input type="password" placeholder="Password" id="password" required>
+                </div>
+                <button id="saveBtn">Save</button>
+            </form>
+        </div>
+
+        <div class="saved-passwords">
+           <button id="viewPasswords">View Passwords</button>
+           <div class="password-box">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Website</th>
+                        <th>Username</th>
+                        <th>Password</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody  id="savedPassFields">
+                    <tr>
+                        <td>1</td>
+                        <td>anirudh.com <i class='bx bxs-copy' onclick="copy()" style="margin-left: 20px;"></i></td>
+                        <td>anirudh <i class='bx bxs-copy' onclick="copy()" style="margin-left: 20px;"></i></td>
+                        <td>123 <i class='bx bxs-copy' onclick="copy('123')" style="margin-left: 20px;"></i></td>
+                        <td><button id="DeletBtn">Delete</button></td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <a href="/pages/verification.html"><button id="deleteAllBtn">Delete All</button></a>
+           </div>
+        </div>
+    </div>
+
+</body>
+<script src="js/app.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</html>
