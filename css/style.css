@@ -164,5 +164,9 @@ tr:hover {
     table {
         font-size: 14px; /* Reduce font size for smaller screens */
     }
+
+       .password-box{
+        overflow-x: scroll;
+    }
 }
 
